@@ -23,7 +23,7 @@ sap.ui.define([
 		    
 		    }else if(oInput1 === "" && oInput2 === ""){
 		    	
-		        	MessageToast.show("Please Enter admin name");
+		        	MessageToast.show(" Enter admin name");
 		    
 		    }
 		}
