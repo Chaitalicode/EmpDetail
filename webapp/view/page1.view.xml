@@ -1,0 +1,34 @@
+<mvc:View controllerName="ED.EmpDetails.controller.page1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						
+							<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true" layout="ResponsiveGridLayout" id="form0">
+						
+					    <sap.ui.layout.form:content>
+						
+					        <sap.ui.core:Title id="title0"/>
+						
+					        <Label text="adminName" id="label0"/>
+						
+					        <Input width="30%" id="input0"/>
+						
+					        <Label text="Password" id="label1"/>
+						
+					        <Input width="30%" id="input2"/>
+					        
+					        <Label></Label>
+					        	<Button xmlns="sap.m" text="Login" press="onClick" id="button0" width="20%" />
+					        
+					        </sap.ui.layout.form:content>
+						
+					</sap.ui.layout.form:SimpleForm>
+						
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
