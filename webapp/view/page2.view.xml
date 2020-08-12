@@ -1,0 +1,19 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ED.EmpDetails.controller.page2"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+					<List items="{emp>/Company}" itemPress="onPress" mode="SingleSelectMaster">
+						<items>
+							<ObjectListItem title="{emp>Cname}" type="Navigation" >
+								
+							</ObjectListItem>
+						</items>
+					</List>
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

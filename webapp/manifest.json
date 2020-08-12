@@ -1,0 +1,112 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "ED.EmpDetails",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"flexEnabled": false,
+		"rootView": {
+			"viewName": "ED.EmpDetails.view.page1",
+			"type": "XML",
+			"async": true,
+			"id": "page1"
+		},
+		"dependencies": {
+			"minUI5Version": "1.65.6",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "ED.EmpDetails.i18n.i18n"
+				}
+			},
+			"emp": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/empDetail.json"
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "ED.EmpDetails.view",
+				"controlAggregation": "pages",
+				"controlId": "app",
+				"clearControlAggregation": false
+			},
+			"routes": [{
+				"name": "Routepage1",
+				"pattern": "Routepage1/{emp}",
+				"target": ["Targetpage1"]
+			}, {
+				"name": "Routepage2",
+				"pattern": "Routepage2",
+				"target": ["Targetpage2"]
+			}, {
+				"name": "Routepage3",
+				"pattern": "Routepage3/{empName}",
+				"target": ["Targetpage3"]
+			}],
+			"targets": {
+				"Targetpage1": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewId": "page1",
+					"viewName": "page1"
+				},
+				"Targetpage2": {
+					"viewType": "XML",
+					"viewName": "page2"
+				},
+				"Targetpage3": {
+					"viewType": "XML",
+					"viewName": "page3"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+	{
+	"Company": [{
+			"Cname": "Signiwis",
+			"EmpDetail": [{
+				"name": "Virendra",
+				"Details":[{
+					"id":101,
+					"city":"Bangalore",
+					"email":"viru@gmail.com"
+				}],
+				"phone": 85646653737
+			}, {
+				"name": "Chaitali",
+				"Details":[{
+					"id":102,
+					"city":"Udaipur",
+					"email":"chaitali@gmail.com"
+				}],
+				"phone": 845747738738
+			}]
+	},
+	{
+			"Cname": "Cognizant",
+			"EmpDetail": [{
+				"name": "Shreya",
+				"Details":[{
+					"id":101,
+					"city":"Bangalore",
+					"email":"shreya@gmail.com"
+				}],
+				"phone": 9093933933
+			}, {
+				"name": "Ramesh",
+				"Details":[{
+					"id":102,
+					"city":"Udaipur",
+					"email":"ramesh@gmail.com"
+				}],
+				"phone": 7069696969
+			}]
+	}]
+	}
